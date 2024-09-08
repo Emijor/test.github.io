@@ -3993,9 +3993,18 @@ blockquote {
     padding: .25em 6vw;
   }
 
+  .c-nav_logo {
+    width: 60px;
+    height: 60px;
+  }
+
   .c-button.is--white.is--button-2 {
     width: 100%;
     margin-top: 1em;
+  }
+
+  .c-button.is--black {
+    font-size: 18px;
   }
 
   .c-button.is--button1 {
@@ -4057,10 +4066,15 @@ blockquote {
   .c-sermon_title {
     margin-top: .4em;
     margin-bottom: .4em;
+    font-size: 2em;
   }
 
   .c-homepage_item {
     min-height: 70vw;
+  }
+
+  .c-homepage_list {
+    flex-flow: wrap;
   }
 
   .c-nav_menu-scroll {
@@ -4245,6 +4259,10 @@ blockquote {
   .slide-4 {
     border: 0px none var(--black);
     border-radius: 0;
+  }
+
+  .image-14 {
+    text-align: left;
   }
 }
 
