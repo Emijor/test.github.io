@@ -2604,6 +2604,12 @@ blockquote {
     min-width: 100%;
   }
 
+  .a-content-grid-wrapper {
+    flex-flow: column;
+    grid-auto-columns: 1fr;
+    display: flex;
+  }
+
   .text-block-5, .text-block-6, .text-block-7, .text-block-8 {
     font-size: 22px;
   }
@@ -2687,6 +2693,10 @@ blockquote {
 
   .icon {
     font-size: 25px;
+  }
+
+  .bold-text-4 {
+    font-size: 18px;
   }
 }
 
