@@ -2460,6 +2460,10 @@ blockquote {
     max-height: 150vw;
   }
 
+  .c-button {
+    font-size: 5vw;
+  }
+
   .c-button.is--black {
     font-size: 16px;
   }
@@ -2477,7 +2481,7 @@ blockquote {
   }
 
   .c-large-header_contain {
-    font-size: 3vw;
+    font-size: 4vw;
   }
 
   .is--display-line {
@@ -2567,6 +2571,10 @@ blockquote {
   .c-popup_x {
     margin-top: .8em;
     margin-right: .8em;
+  }
+
+  .c-contact_img {
+    width: 100%;
   }
 
   .slide {
@@ -2704,7 +2712,7 @@ blockquote {
   grid-area: span 1 / span 1 / span 1 / span 1;
 }
 
-#w-node-_80cc7459-b28b-08bc-a6d4-235e2e5c4cb1-65ad057f, #w-node-_2105f2c2-3992-98f8-a768-d8d494242c7e-65ad057f {
+#w-node-_2105f2c2-3992-98f8-a768-d8d494242c7e-65ad057f {
   grid-area: Area;
 }
 
