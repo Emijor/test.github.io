@@ -7,6 +7,7 @@
   --medium-grey: #27262e;
   --text-color: #797881;
   --alley-component-library--blue--900: #5167f6;
+  --alley-component-library--blue--100: #eceefe;
   --alley-component-library--blue--800: #6478f7;
   --alley-component-library--blue--700: #7788f8;
   --alley-component-library--neutral--black: black;
@@ -24,7 +25,6 @@
   --trans: transparent;
   --transparent: var(--trans);
   --untitled-ui--gray400: #98a2b3;
-  --alley-component-library--blue--100: #eceefe;
   --alley-component-library--gray--900: #131316;
   --alley-component-library--neutral--off-white: #f4f4f6;
   --untitled-ui--success700: #027a48;
@@ -1033,6 +1033,36 @@ blockquote {
   display: flex;
 }
 
+.a-button-secondary-square {
+  grid-column-gap: 8px;
+  grid-row-gap: 8px;
+  color: var(--alley-component-library--blue--900);
+  text-align: center;
+  letter-spacing: -.02em;
+  background-color: #fff;
+  border-radius: 8px;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 48px;
+  min-height: 48px;
+  padding: 12px 32px;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+  text-decoration: none;
+  transition: all .5s cubic-bezier(.6, .6, 0, 1);
+  display: none;
+}
+
+.a-button-secondary-square:hover {
+  background-color: var(--alley-component-library--blue--100);
+}
+
+.a-button-secondary-square:active {
+  background-color: #d8d7df;
+}
+
 .a-h3-heading {
   color: var(--white);
   letter-spacing: -.02em;
@@ -1168,6 +1198,19 @@ blockquote {
 
 .text-span-5 {
   color: var(--car-empire);
+}
+
+.a-content-caption-wrapper {
+  grid-column-gap: 8px;
+  grid-row-gap: 8px;
+  text-align: center;
+  flex-direction: column;
+  align-items: center;
+  max-width: 450px;
+  margin-top: 40px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
 }
 
 .a-subheading-regular {
@@ -1805,6 +1848,31 @@ blockquote {
   font-size: 20px;
 }
 
+.c-sermon-2 {
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+  color: #fff;
+  background-image: linear-gradient(0deg, #0f0e17c4, #0f0e17b0 28%, #0f0e1700 56%);
+  border-radius: .6em;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-start;
+  min-height: 70vw;
+  padding: 4em;
+  display: flex;
+  position: relative;
+  overflow: hidden;
+}
+
+.c-sermon-2.startseite, .slider-3 {
+  display: none;
+}
+
+.is--sermon-tag-2 {
+  color: #f7f9fc;
+  font-size: .9em;
+}
+
 @media screen and (min-width: 1920px) {
   .c-sermon_bg.startseite {
     column-count: 3;
@@ -1917,7 +1985,17 @@ blockquote {
     background-image: linear-gradient(#0000, #0000);
   }
 
-  .c-button.is--white.is--hero-button2, .c-button.is--hero-button1, .c-button.is--white.is--hero-button2 {
+  .c-button.is--white.is--hero-button2, .c-button.is--hero-button1 {
+    margin-bottom: 1em;
+    margin-left: .5em;
+    margin-right: .5em;
+  }
+
+  .c-button.is--black {
+    font-size: 2.5vw;
+  }
+
+  .c-button.is--white.is--hero-button2 {
     margin-bottom: 1em;
     margin-left: .5em;
     margin-right: .5em;
@@ -1962,9 +2040,9 @@ blockquote {
   }
 
   .c-mission_photo {
-    width: 32vw;
+    width: 35vw;
     min-width: 32vw;
-    height: 45vw;
+    height: 35vw;
   }
 
   .c-mission_content {
@@ -1975,6 +2053,7 @@ blockquote {
   .c-sermon {
     min-height: 80vw;
     padding: 1.6em;
+    display: none;
   }
 
   .c-homepage_item {
@@ -2049,10 +2128,6 @@ blockquote {
     font-size: 20px;
   }
 
-  .a-subheading-large {
-    font-size: 4vw;
-  }
-
   .a-button-primary-square {
     display: flex;
   }
@@ -2066,17 +2141,7 @@ blockquote {
   }
 
   .a-content-grid-wrapper {
-    grid-column-gap: 24px;
-    grid-row-gap: 24px;
-    flex-flow: column;
-    grid-template-rows: 1fr auto;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-auto-columns: 1fr;
-    display: flex;
-  }
-
-  .text-block-5, .text-block-6, .text-block-7, .text-block-8 {
-    font-size: 4vw;
+    grid-template-columns: 1fr 1fr;
   }
 
   .uui-footer05_bottom-wrapper {
@@ -2096,7 +2161,6 @@ blockquote {
   }
 
   .f-grid-three-column {
-    grid-template-rows: auto auto;
     grid-template-columns: 1fr 1fr;
   }
 
@@ -2122,6 +2186,32 @@ blockquote {
   .combine-padding-global {
     padding-left: 2.5rem;
     padding-right: 2.5rem;
+  }
+
+  .f-title-wrapper-center-2 {
+    padding-top: 25vw;
+  }
+
+  .slider-2 {
+    width: 100%;
+    height: 100%;
+    display: block;
+  }
+
+  .c-sermon-2 {
+    min-height: 80vw;
+    padding: 1.6em;
+  }
+
+  .c-sermon-2.startseite {
+    background-image: none;
+    display: block;
+  }
+
+  .slider-3.startseite {
+    width: 100%;
+    height: 100%;
+    display: block;
   }
 }
 
@@ -2174,6 +2264,11 @@ blockquote {
 
   .c-sermon {
     min-height: 85vw;
+    display: none;
+  }
+
+  .c-sermon_bg.startseite {
+    display: none;
   }
 
   .c-homepage_item {
@@ -2321,6 +2416,16 @@ blockquote {
     font-size: 40px;
   }
 
+  .f-title-wrapper-center-2 {
+    padding-top: 20vw;
+  }
+
+  .slider-2 {
+    width: 100%;
+    height: 100%;
+    display: block;
+  }
+
   .f-h1-heading {
     margin-top: 0;
     font-size: 48px;
@@ -2331,8 +2436,21 @@ blockquote {
     padding-bottom: 72px;
   }
 
-  .heading-2 {
-    font-size: 3em;
+  .c-sermon-2 {
+    min-height: 85vw;
+  }
+
+  .c-sermon-2.startseite {
+    background-image: none;
+    display: block;
+  }
+
+  .slider-3.startseite {
+    border: 4px solid var(--car-empire);
+    border-radius: 10px;
+    width: 100%;
+    height: 100%;
+    display: block;
   }
 }
 
@@ -2355,8 +2473,7 @@ blockquote {
   }
 
   .c-section.galarie {
-    max-height: 120vw;
-    margin-bottom: 10em;
+    max-height: 150vw;
   }
 
   .c-button {
@@ -2608,6 +2725,25 @@ blockquote {
 
   .bold-text-4 {
     font-size: 18px;
+  }
+
+  .c-sermon-2 {
+    background-image: none;
+    min-height: 100vw;
+    margin-bottom: -140px;
+    padding: 1.5em;
+  }
+
+  .c-sermon-2.startseite {
+    display: block;
+  }
+
+  .slider-3 {
+    border: 4px solid #86751d;
+    border-radius: 10px;
+    width: 100%;
+    height: 100%;
+    display: block;
   }
 }
 
