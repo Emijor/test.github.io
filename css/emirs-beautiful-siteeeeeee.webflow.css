@@ -980,8 +980,8 @@ blockquote {
 
 .a-caption {
   letter-spacing: -.01em;
-  font-size: 15px;
-  font-weight: 500;
+  font-size: 19px;
+  font-weight: 700;
   line-height: 24px;
 }
 
@@ -2141,7 +2141,9 @@ blockquote {
   }
 
   .a-content-grid-wrapper {
+    flex-flow: column;
     grid-template-columns: 1fr 1fr;
+    display: flex;
   }
 
   .uui-footer05_bottom-wrapper {
@@ -2354,7 +2356,10 @@ blockquote {
   }
 
   .a-content-grid-wrapper {
-    grid-template-columns: 1fr;
+    flex-flow: column;
+    grid-template-rows: 1fr auto auto;
+    grid-template-columns: 1fr 1fr 1fr;
+    display: flex;
   }
 
   .a-h3-heading-2 {
