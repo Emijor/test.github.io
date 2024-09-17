@@ -806,10 +806,20 @@ blockquote {
 }
 
 .c-contact_img {
+  box-sizing: border-box;
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+  aspect-ratio: auto;
   border: 0px none var(--car-empire);
+  vertical-align: baseline;
   object-fit: cover;
   border-radius: 0;
+  flex-flow: wrap;
+  justify-content: flex-end;
+  align-items: stretch;
   margin-top: 2em;
+  padding-left: 0;
+  display: block;
 }
 
 .c-contact_stats {
@@ -980,7 +990,7 @@ blockquote {
 
 .a-caption {
   letter-spacing: -.01em;
-  font-size: 19px;
+  font-size: 15px;
   font-weight: 700;
   line-height: 24px;
 }
@@ -1703,14 +1713,14 @@ blockquote {
 }
 
 .text-block-21 {
-  color: var(--white);
+  color: var(--black);
   text-transform: none;
   font-family: DM Sans, sans-serif;
   font-weight: 500;
 }
 
 .text-block-22, .text-block-23, .text-block-24 {
-  color: var(--white);
+  color: var(--black);
   font-family: DM Sans, sans-serif;
   font-weight: 500;
 }
@@ -1871,6 +1881,10 @@ blockquote {
 .is--sermon-tag-2 {
   color: #f7f9fc;
   font-size: .9em;
+}
+
+.heading-2 {
+  color: var(--black);
 }
 
 @media screen and (min-width: 1920px) {
@@ -2617,7 +2631,7 @@ blockquote {
   }
 
   .a-subheading-large {
-    font-size: 40px;
+    font-size: 30px;
   }
 
   .a-button-primary-square {
