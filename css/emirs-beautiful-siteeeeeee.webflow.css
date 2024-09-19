@@ -334,6 +334,10 @@ blockquote {
   overflow: hidden;
 }
 
+.c-hero_h1 {
+  text-align: left;
+}
+
 .c-hero_h1-contain {
   margin-bottom: 2em;
   padding-bottom: 1em;
@@ -1812,7 +1816,7 @@ blockquote {
 .f-paragraph-large {
   letter-spacing: -.02em;
   margin-bottom: 0;
-  font-size: 18px;
+  font-size: 20px;
   line-height: 32px;
 }
 
@@ -1920,7 +1924,7 @@ blockquote {
   overflow: hidden;
 }
 
-.text-span-23 {
+.text-span-23, .text-span-24 {
   color: var(--car-empire);
 }
 
@@ -2059,6 +2063,7 @@ blockquote {
   }
 
   .c-hero_h1 {
+    text-align: left;
     font-size: 4em;
   }
 
@@ -2286,6 +2291,7 @@ blockquote {
   }
 
   .c-hero_h1 {
+    text-align: left;
     font-size: 8vw;
   }
 
@@ -2550,6 +2556,7 @@ blockquote {
   }
 
   .c-hero_h1 {
+    text-align: left;
     font-size: 8vw;
   }
 
@@ -2783,6 +2790,10 @@ blockquote {
     font-size: 15px;
   }
 
+  .f-title-wrapper-center-2 {
+    padding-top: 40vw;
+  }
+
   .image-15 {
     border-radius: 0;
   }
@@ -2799,6 +2810,14 @@ blockquote {
 
   .icon {
     font-size: 20px;
+  }
+
+  .f-paragraph-large {
+    font-size: 15px;
+  }
+
+  .f-h1-heading {
+    font-size: 27px;
   }
 
   .bold-text-4 {
