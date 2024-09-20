@@ -2389,6 +2389,7 @@ blockquote {
 
   .c-button.is--black {
     font-size: 16px;
+    display: none;
   }
 
   .c-hero_h1 {
@@ -2497,6 +2498,10 @@ blockquote {
     width: 100%;
   }
 
+  .c-contact_img.instagam {
+    margin-right: 10em;
+  }
+
   .image-6, .image-7, .image-8 {
     border-width: 2px;
     border-radius: 10px;
@@ -2578,6 +2583,10 @@ blockquote {
     font-size: 2rem;
   }
 
+  .combine-padding-section-medium {
+    margin-top: 5rem;
+  }
+
   .combine-padding-global {
     padding-left: 1rem;
     padding-right: 1rem;
@@ -2605,7 +2614,9 @@ blockquote {
   }
 
   .slider-2 {
+    border: 4px solid var(--brand);
     background-color: var(--transparent\<deleted\|variable-73f5b1f1-8d9d-c910-1516-f336e42b8e6b\>);
+    border-radius: 10px;
     height: 100%;
     display: block;
   }
@@ -2638,6 +2649,7 @@ blockquote {
   }
 
   .c-sermon-2.startseite {
+    -webkit-text-stroke-color: white;
     display: block;
   }
 
@@ -2653,13 +2665,8 @@ blockquote {
     font-size: 20px;
   }
 
-  .image-16 {
-    border: 4px solid var(--brand);
-    border-radius: 10px;
-  }
-
   .bold-text-5 {
-    color: var(--white\<deleted\|variable-79f21d30\>);
+    color: var(--color--text);
   }
 
   .toggle_wrap {
